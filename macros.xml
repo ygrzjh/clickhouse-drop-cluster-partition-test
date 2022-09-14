@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<clickhouse>
+    <!-- Substitutions for parameters of replicated tables.
+          Optional. If you don't use replicated tables, you could omit that.
+
+         See https://clickhouse.com/docs/en/engines/table-engines/mergetree-family/replication/#creating-replicated-tables
+      -->
+    <macros>
+        <cluster>default</cluster>
+        <index>${SHARD}${REPLICA}</index>
+        <shard>${SHARD}</shard>
+        <replica>clickhouse${REPLICA}</replica>
+    </macros>
+</clickhouse>

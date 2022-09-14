@@ -1,0 +1,10 @@
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Idea
+.idea/
+target/
+
+clickhouse0*/
