@@ -32,7 +32,7 @@ make config up
 ```
 
 ## Test it
-Symptom: drop partition on replicated database cluster sql(e.g: `ALTER TABLE demo.test ON CLUSTER 'demo' DROP PARTITION '0';`) only executed on the local clickhouse node,not distributed to the cluster.
+Symptom: drop partition on replicated database cluster sql(e.g: `ALTER TABLE demo.test ON CLUSTER 'demo' DROP PARTITION '0';`) only executed on the local clickhouse node,not distributed to the replicated database cluster.
 
 - Crate demo replicated database
 ```sql
